@@ -75,13 +75,13 @@ async def start(bot: Client, cmd: Message):
                 [
                     [
                         
-                        InlineKeyboardButton("ʜᴇɴᴛᴀɪ", url="https://t.me/+pB7T_8YzkyYxMzI1"),
-                        InlineKeyboardButton("ᴄᴏꜱᴘʟᴀʏ", url="https://t.me/+hg3WMFzY1RRlMzk1")
+                        InlineKeyboardButton("ʜᴇɴᴛᴀɪ ꜱᴛᴀᴛɪᴏɴ", url="https://t.me/+pB7T_8YzkyYxMzI1"),
+                        InlineKeyboardButton("ᴄᴏꜱᴘʟᴀʏ ꜱᴛᴀᴛɪᴏɴ", url="https://t.me/+hg3WMFzY1RRlMzk1")
                     ],                    [
                         InlineKeyboardButton("ᴏɴʟʏ ꜰᴀɴꜱ ꜱᴛᴀᴛɪᴏɴ", url="https://t.me/+pB7T_8YzkyYxMzI1")
                     ],
                     [
-                        InlineKeyboardButton("ᴄᴏʀɴʜᴜʙ", url="https://t.me/+E6B6QP5RJ4gyMDll"),
+                        InlineKeyboardButton("ᴄᴏʀɴʜᴜʙ ꜱᴛᴀᴛɪᴏɴ", url="https://t.me/+E6B6QP5RJ4gyMDll"),
                         InlineKeyboardButton("ᴊᴀᴠ ꜱᴛᴀᴛɪᴏɴ", url="https://t.me/+8dIo2yXFOyNjODRl")
                     ]
                 ]
@@ -354,13 +354,13 @@ async def button(bot: Client, cmd: CallbackQuery):
                 [
                     [
                         
-                        InlineKeyboardButton("ʜᴇɴᴛᴀɪ", url="https://t.me/+pB7T_8YzkyYxMzI1"),
-                        InlineKeyboardButton("ᴄᴏꜱᴘʟᴀʏ", url="https://t.me/+hg3WMFzY1RRlMzk1")
+                        InlineKeyboardButton("ʜᴇɴᴛᴀɪ ꜱᴛᴀᴛɪᴏɴ", url="https://t.me/+pB7T_8YzkyYxMzI1"),
+                        InlineKeyboardButton("ᴄᴏꜱᴘʟᴀʏ ꜱᴛᴀᴛɪᴏɴ", url="https://t.me/+hg3WMFzY1RRlMzk1")
                     ],                    [
                         InlineKeyboardButton("ᴏɴʟʏ ꜰᴀɴꜱ ꜱᴛᴀᴛɪᴏɴ", url="https://t.me/+pB7T_8YzkyYxMzI1")
                     ],
                     [
-                        InlineKeyboardButton("ᴄᴏʀɴʜᴜʙ", url="https://t.me/+E6B6QP5RJ4gyMDll"),
+                        InlineKeyboardButton("ᴄᴏʀɴʜᴜʙ ꜱᴛᴀᴛɪᴏɴ", url="https://t.me/+E6B6QP5RJ4gyMDll"),
                         InlineKeyboardButton("ᴊᴀᴠ ꜱᴛᴀᴛɪᴏɴ", url="https://t.me/+8dIo2yXFOyNjODRl")
                     ]
                 ]
