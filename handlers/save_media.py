@@ -16,7 +16,7 @@ def generate_random_alphanumeric():
     """Generate a random 8-letter alphanumeric string."""
     characters = string.ascii_letters + string.digits
     random_chars = ''.join(random.choice(characters) for _ in range(8))
-    retURn random_chars
+    return random_chars
 
 def get_short(URl):
     rget = requests.get(f"https://{Config.SHORTLINK_URL}/api?api={Config.SHORTLINK_API}&URl={URl}&alias={generate_random_alphanumeric()}")
