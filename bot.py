@@ -28,10 +28,7 @@ from handlers.add_user_to_db import add_user_to_database
 from handlers.send_file import send_media_and_reply
 from handlers.helpers import b64_to_str, str_to_b64
 from handlers.check_user_status import handle_user_status
-from handlers.force_sub_handler import (
-    handle_force_sub,
-    get_invite_link
-)
+from force_sub import handle_force_sub
 from handlers.broadcast_handlers import main_broadcast_handler
 from handlers.save_media import (
     save_media_in_channel,
@@ -60,10 +57,10 @@ async def start(bot: Client, cmd: Message):
     if cmd.from_user.id in Config.BANNED_USERS:
         await cmd.reply_text("Sorry, You are banned.")
         return
-    if Config.UPDATES_CHANNEL is not None:
-        back = await handle_force_sub(bot, cmd)
-        if back == 400:
-            return
+# Check force subscription for all required channels
+    force_sub_status = await handle_force_sub(bot, cmd)
+    if force_sub_status == 400:
+        return  # User not subscribed to required channels
     
     usr_cmd = cmd.text.split("_", 1)[-1]
     if usr_cmd == "/start":
