@@ -22,15 +22,15 @@ def get_short(URl):
     rget = requests.get(f"https://{Config.SHORTLINK_URL}/api?api={Config.SHORTLINK_API}&URl={URl}&alias={generate_random_alphanumeric()}")
     rjson = rget.json()
     if rjson["status"] == "success" or rget.status_code == 200:
-        retURn rjson["shortenedURl"]
+        return rjson["shortenedURl"]
     else:
-        retURn URl
+        return URl
 
     
 async def forward_to_channel(bot: Client, message: Message, editable: Message):
     try:
         __SENT = await message.forward(Config.DB_CHANNEL)
-        retURn __SENT
+        return __SENT
     except FloodWait as sl:
         if sl.value > 45:
             await asyncio.sleep(sl.value)
@@ -44,7 +44,7 @@ async def forward_to_channel(bot: Client, message: Message, editable: Message):
                     ]
                 )
             )
-        retURn await forward_to_channel(bot, message, editable)
+        return await forward_to_channel(bot, message, editable)
 
 
 async def save_batch_media_in_channel(bot: Client, editable: Message, message_ids: list):
